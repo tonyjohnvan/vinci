@@ -7,6 +7,7 @@
     <meta name="author" content="FanZhang">
 
     <link rel="stylesheet" href="assets/css/index.css"/>
+    <link rel="stylesheet" href="assets/css/animate.css"/>
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -17,6 +18,7 @@
 <div class="game-container">
     <div class="gameCanvas">
         <div class="gameboard">
+            <span class="gamespace" id="0"></span>
             <span class="gamespace" id="1"></span>
             <span class="gamespace" id="2"></span>
             <span class="gamespace" id="3"></span>
@@ -79,9 +81,15 @@
             <span class="gamespace" id="60"></span>
             <span class="gamespace" id="61"></span>
             <span class="gamespace" id="62"></span>
-            <span class="gamespace" id="63"></span>
+        </div>
+
+
+        <div class="nextLevel">
+            <h1 class="timeUsed">xx.xx s</h1>
+            <img src="assets/img/continue.png" alt="Continue" class="continueGame"/>
         </div>
     </div>
+
 </div>
 
 
