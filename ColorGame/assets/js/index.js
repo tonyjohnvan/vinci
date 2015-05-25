@@ -2,7 +2,6 @@
  * Created by fanzhang on 5/25/15.
  */
 $(function(){
-
     var startTime = new Date();
 
     $('.gamespace').on('mouseover',function(e){

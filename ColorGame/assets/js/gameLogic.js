@@ -128,3 +128,22 @@ function checkAround(cell) {
 function checkIfWin(){
     return ($('.gamespace[status="open"]').length==0)
 }
+
+
+
+//image preloader
+var images = new Array();
+function preload() {
+    for (i = 0; i < preload.arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i]
+    }
+}
+preload(
+    "assets/img/color1.png",
+    "assets/img/color2.png",
+    "assets/img/color3.png",
+    "assets/img/color4.png",
+    "assets/img/color5.png",
+    "assets/img/color6.png"
+);
