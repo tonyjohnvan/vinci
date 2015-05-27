@@ -52,7 +52,11 @@ var currentLevel = 0;
 
 var timeUsed;
 
+var startTime;
+
 function setGameBoard(level) {
+
+    startTime = new Date();
 
     $('.game-container').css({
         'background': 'url(assets/img/color' + levels[currentLevel].stage + '.png) no-repeat center center',
