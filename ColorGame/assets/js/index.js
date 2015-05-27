@@ -5,7 +5,7 @@ $(function(){
 
     var startTime = new Date();
 
-    $('.gamespace').on('mouseover',function(e){
+    $('.gamespace').on('mouseover touchmove',function(e){
 //        console.log(e.target);
         var cell = $(e.target);
         if(canMove(cell)){
@@ -31,9 +31,9 @@ $(function(){
 
     startLevel();
 
-    $('body').on('click',function(){
-        startLevel()
-    });
+//    $('body').on('click',function(){
+//        startLevel()
+//    });
 
 
     $('.continueGame').on('click',function(){
