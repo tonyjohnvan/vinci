@@ -3,6 +3,10 @@
  */
 $(function(){
 
+    document.body.addEventListener('touchmove', function (event) {
+        event.preventDefault();
+    }, false);
+
     var startTime = new Date();
 
     $('.gamespace').on('mouseover touchmove touchstart',function(e){
