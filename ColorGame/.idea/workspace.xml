@@ -26,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6212953" vertical-offset="1144" max-vertical-offset="2055">
-              <caret line="114" column="104" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.73655325" vertical-offset="1144" max-vertical-offset="2055">
+              <caret line="121" column="100" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -161,6 +161,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../HTMLTemp/exp" />
     <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -215,6 +216,9 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="52d22a1d-913d-493a-94d4-b95d131c6586" name="Default" comment="" />
@@ -315,8 +319,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6212953" vertical-offset="1144" max-vertical-offset="2055">
-          <caret line="114" column="104" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.73655325" vertical-offset="1144" max-vertical-offset="2055">
+          <caret line="121" column="100" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="58" />
           <folding />
         </state>
       </provider>
