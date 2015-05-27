@@ -5,7 +5,7 @@ $(function(){
 
     var startTime = new Date();
 
-    $('.gamespace').on('mouseover touchmove',function(e){
+    $('.gamespace').on('mouseover touchmove touchstart',function(e){
 //        console.log(e.target);
         var cell = $(e.target);
         if(canMove(cell)){
