@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
-    <meta name = "viewport" content = "width = 320, initial-scale = 0.75, user-scalable = no">
+    <meta id="viewport" name = "viewport" content = "width = 320, initial-scale = 0.75, user-scalable = no">
 
     <link rel="stylesheet" href="assets/css/index.css"/>
     <link rel="stylesheet" href="assets/css/animate.css"/>
@@ -22,8 +22,8 @@
 </head>
 <body>
 
-<section id="bganim" class="background bganim dark">
-</section>
+<!--<section id="bganim" class="background bganim dark">-->
+<!--</section>-->
 
 <div class="game-container">
     <div class="gameCanvas">
@@ -128,5 +128,11 @@
 <script src="assets/js/bgAnim.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/gameLogic.js"></script>
+<script>
+    if($(window).height()<641){
+        // iphone 4
+        $('#viewport').attr('content','width = 320, initial-scale = 0.6, user-scalable = no');
+    }
+</script>
 </body>
 </html>
