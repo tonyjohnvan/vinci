@@ -1,0 +1,411 @@
+/* CSS reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: helveticaNeue;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+input {
+    border: 1px solid #b0b0b0;
+    padding: 3px 5px 4px;
+    color: #979797;
+    width: 190px;
+}
+
+address, caption, cite, code, dfn, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+.clr {
+    clear: both;
+    margin: 10px 0 10px 0;
+    height: 20px;
+}
+
+
+
+
+@-webkit-keyframes shakeing1 {
+    0% {margin: 1px 0 0 -1px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 0px 0 0 0px}
+    70% {margin: 1px 0 0 -1px}
+    80% {margin: 2px 0 0 -2px}
+    90% {margin: 3px 0 0 -3px}
+    100% {margin: 2px 0 0 -2px}
+}
+@keyframes shakeing1 {
+    0% {margin: 1px 0 0 -1px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 0px 0 0 0px}
+    70% {margin: 1px 0 0 -1px}
+    80% {margin: 2px 0 0 -2px}
+    90% {margin: 3px 0 0 -3px}
+    100% {margin: 2px 0 0 -2px}
+}
+
+@-webkit-keyframes shakeing2 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: -1px 0 0 1px}
+    30% {margin: -2px 0 0 2px}
+    40% {margin: -3px 0 0 3px}
+    50% {margin: -2px 0 0 2px}
+    60% {margin: -1px 0 0 1px}
+    70% {margin: 0px 0 0 0px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+@keyframes shakeing2 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: -1px 0 0 1px}
+    30% {margin: -2px 0 0 2px}
+    40% {margin: -3px 0 0 3px}
+    50% {margin: -2px 0 0 2px}
+    60% {margin: -1px 0 0 1px}
+    70% {margin: 0px 0 0 0px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@-webkit-keyframes shakeing3 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 1px 0 0 0px}
+    50% {margin: 2px 0 0 -1px}
+    60% {margin: 3px 0 0 -2px}
+    70% {margin: 2px 0 0 -1px}
+    80% {margin: 1px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+@keyframes shakeing3 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 1px 0 0 0px}
+    50% {margin: 2px 0 0 -1px}
+    60% {margin: 3px 0 0 -2px}
+    70% {margin: 2px 0 0 -1px}
+    80% {margin: 1px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@-webkit-keyframes shakeing4 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 1px 0 0 -2px}
+    70% {margin: 2px 0 0 -4px}
+    80% {margin: 3px 0 0 -6px}
+    90% {margin: 2px 0 0 -4px}
+    100% {margin: 1px 0 0 -2px}
+}
+
+@keyframes shakeing4 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 1px 0 0 -2px}
+    70% {margin: 2px 0 0 -4px}
+    80% {margin: 3px 0 0 -6px}
+    90% {margin: 2px 0 0 -4px}
+    100% {margin: 1px 0 0 -2px}
+}
+
+@-webkit-keyframes shakeing5 {
+    0% {margin: 1px 0 0 1px}
+    10% {margin: 2px 0 0 2px}
+    20% {margin: 3px 0 0 3px}
+    30% {margin: 2px 0 0 2px}
+    40% {margin: 1px 0 0 1px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 0px 0 0 0px}
+    70% {margin: 0px 0 0 0px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@keyframes shakeing5 {
+    0% {margin: 1px 0 0 1px}
+    10% {margin: 2px 0 0 2px}
+    20% {margin: 3px 0 0 3px}
+    30% {margin: 2px 0 0 2px}
+    40% {margin: 1px 0 0 1px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 0px 0 0 0px}
+    70% {margin: 0px 0 0 0px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@-webkit-keyframes shakeing6 {
+    0% {margin: -3px 0 0 -3px}
+    10% {margin: -2px 0 0 -2px}
+    20% {margin: -1px 0 0 -1px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 0px 0 0 0px}
+    70% {margin: 0px 0 0 0px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: -1px 0 0 -1px}
+    100% {margin: -2px 0 0 -2px}
+}
+
+@keyframes shakeing6 {
+    0% {margin: -3px 0 0 -3px}
+    10% {margin: -2px 0 0 -2px}
+    20% {margin: -1px 0 0 -1px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 0px 0 0 0px}
+    70% {margin: 0px 0 0 0px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: -1px 0 0 -1px}
+    100% {margin: -2px 0 0 -2px}
+}
+
+@-webkit-keyframes shakeing7 {
+    0% {margin: 4px 0 0 4px}
+    10% {margin: 2px 0 0 2px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 0px 0 0 0px}
+    70% {margin: 0px 0 0 0px}
+    80% {margin: 2px 0 0 -2px}
+    90% {margin: 4px 0 0 4px}
+    100% {margin: 6px 0 0 6px}
+}
+
+
+@keyframes shakeing7 {
+    0% {margin: 4px 0 0 4px}
+    10% {margin: 2px 0 0 2px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 0px 0 0 0px}
+    70% {margin: 0px 0 0 0px}
+    80% {margin: 2px 0 0 -2px}
+    90% {margin: 4px 0 0 4px}
+    100% {margin: 6px 0 0 6px}
+}
+
+@-webkit-keyframes shakeing8 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: -1px 0 0 -1px}
+    30% {margin: -2px 0 0 -2px}
+    40% {margin: -3px 0 0 -3px}
+    50% {margin: -2px 0 0 -2px}
+    60% {margin: -1px 0 0 -1px}
+    70% {margin: 0px 0 0 0px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@keyframes shakeing8 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: -1px 0 0 -1px}
+    30% {margin: -2px 0 0 -2px}
+    40% {margin: -3px 0 0 -3px}
+    50% {margin: -2px 0 0 -2px}
+    60% {margin: -1px 0 0 -1px}
+    70% {margin: 0px 0 0 0px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@-webkit-keyframes shakeing9 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 2px 0 0 2px}
+    40% {margin: 4px 0 0 4px}
+    50% {margin: 5px 0 0 5px}
+    60% {margin: 4px 0 0 4px}
+    70% {margin: 2px 0 0 2px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@keyframes shakeing9 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 2px 0 0 2px}
+    40% {margin: 4px 0 0 4px}
+    50% {margin: 5px 0 0 5px}
+    60% {margin: 4px 0 0 4px}
+    70% {margin: 2px 0 0 2px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@-webkit-keyframes shakeing10 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 1px 0 0 -2px}
+    60% {margin: 2px 0 0 -4px}
+    70% {margin: 3px 0 0 -5px}
+    80% {margin: 2px 0 0 -4px}
+    90% {margin: 1px 0 0 -2px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@keyframes shakeing10 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 1px 0 0 -2px}
+    60% {margin: 2px 0 0 -4px}
+    70% {margin: 3px 0 0 -5px}
+    80% {margin: 2px 0 0 -4px}
+    90% {margin: 1px 0 0 -2px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@-webkit-keyframes shakeing11 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: -1px 0 0 1px}
+    40% {margin: -2px 0 0 2px}
+    50% {margin: -3px 0 0 3px}
+    60% {margin: -2px 0 0 2px}
+    70% {margin: -1px 0 0 1px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@keyframes shakeing11 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: -1px 0 0 1px}
+    40% {margin: -2px 0 0 2px}
+    50% {margin: -3px 0 0 3px}
+    60% {margin: -2px 0 0 2px}
+    70% {margin: -1px 0 0 1px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@-webkit-keyframes shakeing12 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 0px 0 0 0px}
+    70% {margin: 1px 0 0 1px}
+    80% {margin: 2px 0 0 2px}
+    90% {margin: 1px 0 0 1px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@keyframes shakeing12 {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 0px 0 0 0px}
+    70% {margin: 1px 0 0 1px}
+    80% {margin: 2px 0 0 2px}
+    90% {margin: 1px 0 0 1px}
+    100% {margin: 0px 0 0 0px}
+}
+
+@keyframes shakeing {
+    0% {margin: 0px 0 0 0px}
+    10% {margin: 0px 0 0 0px}
+    20% {margin: 0px 0 0 0px}
+    30% {margin: 0px 0 0 0px}
+    40% {margin: 0px 0 0 0px}
+    50% {margin: 0px 0 0 0px}
+    60% {margin: 0px 0 0 0px}
+    70% {margin: 0px 0 0 0px}
+    80% {margin: 0px 0 0 0px}
+    90% {margin: 0px 0 0 0px}
+    100% {margin: 0px 0 0 0px}
+}
