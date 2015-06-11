@@ -396,6 +396,62 @@ abbr, acronym {
     100% {margin: 0px 0 0 0px}
 }
 
+@-webkit-keyframes shakeing13 {
+    0% {margin: 0px 0 0 -109px}
+    10% {margin: 0px 0 0 -109px}
+    20% {margin: 1px 0 0 -108px}
+    30% {margin: 2px 0 0 -107px}
+    40% {margin: 4px 0 0 -105px}
+    50% {margin: 2px 0 0 -107px}
+    60% {margin: 1px 0 0 -108px}
+    70% {margin: 0px 0 0 -109px}
+    80% {margin: 0px 0 0 -109px}
+    90% {margin: 0px 0 0 -109px}
+    100% {margin: 0px 0 0 -109px}
+}
+
+@keyframes shakeing13 {
+    0% {margin: 0px 0 0 -109px}
+    10% {margin: 0px 0 0 -109px}
+    20% {margin: 1px 0 0 -108px}
+    30% {margin: 2px 0 0 -107px}
+    40% {margin: 4px 0 0 -105px}
+    50% {margin: 2px 0 0 -107px}
+    60% {margin: 1px 0 0 -108px}
+    70% {margin: 0px 0 0 -109px}
+    80% {margin: 0px 0 0 -109px}
+    90% {margin: 0px 0 0 -109px}
+    100% {margin: 0px 0 0 -109px}
+}
+
+@-webkit-keyframes shakeing14 {
+    0% {margin: 0px 0 0 -109px}
+    10% {margin: 0px 0 0 -109px}
+    20% {margin: 0px 0 0 -109px}
+    30% {margin: 0px 0 0 -109px}
+    40% {margin: 0px 0 0 -109px}
+    50% {margin: 2px 0 0 -107px}
+    60% {margin: 3px 0 0 -106px}
+    70% {margin: 4px 0 0 -105px}
+    80% {margin: 3px 0 0 -106px}
+    90% {margin: 2px 0 0 -107px}
+    100% {margin: 0px 0 0 -109px}
+}
+
+@keyframes shakeing14 {
+    0% {margin: 0px 0 0 -109px}
+    10% {margin: 0px 0 0 -109px}
+    20% {margin: 0px 0 0 -109px}
+    30% {margin: 0px 0 0 -109px}
+    40% {margin: 0px 0 0 -109px}
+    50% {margin: 2px 0 0 -107px}
+    60% {margin: 3px 0 0 -106px}
+    70% {margin: 4px 0 0 -105px}
+    80% {margin: 3px 0 0 -106px}
+    90% {margin: 2px 0 0 -107px}
+    100% {margin: 0px 0 0 -109px}
+}
+
 @keyframes shakeing {
     0% {margin: 0px 0 0 0px}
     10% {margin: 0px 0 0 0px}

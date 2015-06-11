@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
-    <meta id="viewport" name = "viewport" content = "width = 320, initial-scale = 0.75, user-scalable = no">
+    <meta id="viewport" name="viewport" content="width = 320, initial-scale = 0.75, user-scalable = no">
 
     <link rel="stylesheet" href="assets/css/index.css"/>
     <link rel="stylesheet" href="assets/css/animate.css"/>
@@ -46,6 +46,10 @@
     <div class="splash-tile" id="tileIC3"></div>
     <div class="splash-tile" id="tileIC4"></div>
     <div class="splash-tile" id="tileIC5"></div>
+
+    <div class="startGameBtn"></div>
+    <div class="gameHelpBtn"></div>
+    <div class="vicinLogoSmall"></div>
 </div>
 
 <div class="game-container">
@@ -127,36 +131,36 @@
 </div>
 
 <div id="preloader">
-    <img src="assets/img/activeTile1.png" width="1" height="1" />
-    <img src="assets/img/activeTile2.png" width="1" height="1" />
-    <img src="assets/img/activeTile3.png" width="1" height="1" />
-    <img src="assets/img/activeTile4.png" width="1" height="1" />
-    <img src="assets/img/activeTile5.png" width="1" height="1" />
-    <img src="assets/img/activeTile6.png" width="1" height="1" />
-    <img src="assets/img/bg.png" width="1" height="1" />
-    <img src="assets/img/cell.png" width="1" height="1" />
-    <img src="assets/img/color1.png" width="1" height="1" />
-    <img src="assets/img/color2.png" width="1" height="1" />
-    <img src="assets/img/color3.png" width="1" height="1" />
-    <img src="assets/img/color4.png" width="1" height="1" />
-    <img src="assets/img/color5.png" width="1" height="1" />
-    <img src="assets/img/color6.png" width="1" height="1" />
-    <img src="assets/img/continue.png" width="1" height="1" />
-    <img src="assets/img/Tile.png" width="1" height="1" />
-    <img src="assets/img/undo.png" width="1" height="1" />
-    <img src="assets/img/splash/B.png" width="1" height="1" />
-    <img src="assets/img/splash/BG.jpg" width="1" height="1" />
-    <img src="assets/img/splash/C.png" width="1" height="1" />
-    <img src="assets/img/splash/E.png" width="1" height="1" />
-    <img src="assets/img/splash/I.png" width="1" height="1" />
-    <img src="assets/img/splash/I2.png" width="1" height="1" />
-    <img src="assets/img/splash/N.png" width="1" height="1" />
-    <img src="assets/img/splash/U.png" width="1" height="1" />
-    <img src="assets/img/splash/V.png" width="1" height="1" />
-    <img src="assets/img/splash/BlackCube1.png" width="1" height="1" />
-    <img src="assets/img/splash/BlackCube2.png" width="1" height="1" />
-    <img src="assets/img/splash/BlackCube3.png" width="1" height="1" />
-    <img src="assets/img/splash/BlackCube4.png" width="1" height="1" />
+    <img src="assets/img/activeTile1.png" width="1" height="1"/>
+    <img src="assets/img/activeTile2.png" width="1" height="1"/>
+    <img src="assets/img/activeTile3.png" width="1" height="1"/>
+    <img src="assets/img/activeTile4.png" width="1" height="1"/>
+    <img src="assets/img/activeTile5.png" width="1" height="1"/>
+    <img src="assets/img/activeTile6.png" width="1" height="1"/>
+    <img src="assets/img/bg.png" width="1" height="1"/>
+    <img src="assets/img/cell.png" width="1" height="1"/>
+    <img src="assets/img/color1.png" width="1" height="1"/>
+    <img src="assets/img/color2.png" width="1" height="1"/>
+    <img src="assets/img/color3.png" width="1" height="1"/>
+    <img src="assets/img/color4.png" width="1" height="1"/>
+    <img src="assets/img/color5.png" width="1" height="1"/>
+    <img src="assets/img/color6.png" width="1" height="1"/>
+    <img src="assets/img/continue.png" width="1" height="1"/>
+    <img src="assets/img/Tile.png" width="1" height="1"/>
+    <img src="assets/img/undo.png" width="1" height="1"/>
+    <img src="assets/img/splash/B.png" width="1" height="1"/>
+    <img src="assets/img/splash/BG.jpg" width="1" height="1"/>
+    <img src="assets/img/splash/C.png" width="1" height="1"/>
+    <img src="assets/img/splash/E.png" width="1" height="1"/>
+    <img src="assets/img/splash/I.png" width="1" height="1"/>
+    <img src="assets/img/splash/I2.png" width="1" height="1"/>
+    <img src="assets/img/splash/N.png" width="1" height="1"/>
+    <img src="assets/img/splash/U.png" width="1" height="1"/>
+    <img src="assets/img/splash/V.png" width="1" height="1"/>
+    <img src="assets/img/splash/BlackCube1.png" width="1" height="1"/>
+    <img src="assets/img/splash/BlackCube2.png" width="1" height="1"/>
+    <img src="assets/img/splash/BlackCube3.png" width="1" height="1"/>
+    <img src="assets/img/splash/BlackCube4.png" width="1" height="1"/>
 </div>
 
 
@@ -165,16 +169,21 @@
 <script src="assets/js/index.js"></script>
 <script src="assets/js/gameLogic.js"></script>
 <script>
-    if($(window).height()<641){
+    if ($(window).height() < 641) {
         // iphone 4
-        $('#viewport').attr('content','width = 320, initial-scale = 0.6, user-scalable = no');
+        $('#viewport').attr('content', 'width = 320, initial-scale = 0.6, user-scalable = no');
     }
 
-    $(document).ready(function() {
+    $(document).ready(function () {
+        // finish loading
         setTimeout(function () {
             $('body').addClass('loaded');
             $('h1').css('color', '#222222');
         }, 3000);
+
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        }, false);
     });
 </script>
 </body>
