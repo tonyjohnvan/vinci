@@ -35,6 +35,13 @@ jQuery(function ($) {
 //        }
 //    });
 
+    $(".startGameBtn").on('tap click',function(){
+        $("#splashScreen").addClass("animated fadeOutUpBig");
+        setTimeout(function(){
+           $('.game-container').show().addClass("animated fadeInDownBig")
+        },500);
+    });
+
     $(".gamespace").bind("touchmove", function(evt){
         var touch = evt.originalEvent.touches[0];
         highlightHoveredObject(touch.clientX, touch.clientY);

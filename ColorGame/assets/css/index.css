@@ -27,8 +27,9 @@ body {
     height: 800px;
     background-size: auto 100%;
     z-index: 100;
-    position: relative;
+    position: absolute;
     display: none;
+    top: 0;
 }
 
 .gameCanvas {
@@ -436,6 +437,7 @@ div#preloader img {
     background-size: 218px auto;
     left: 50%;
     margin: 0 0 0 -109px;
+    z-index: 1003;
 
     -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
@@ -456,6 +458,7 @@ div#preloader img {
     background-size: 218px auto;
     left: 50%;
     margin: 0 0 0 -109px;
+    z-index: 1003;
 
     -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
