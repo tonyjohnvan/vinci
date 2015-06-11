@@ -36,12 +36,22 @@ jQuery(function ($) {
 
     $(".startGameBtn").on('tap click', function () {
         $("#splashScreen").addClass("animated fadeOutUpBig");
+        $(".help-container").addClass("animated fadeOutUpBig");
         setTimeout(function () {
-            $('.game-container').show().addClass("animated fadeInDownBig")
+            $('.game-container').show().addClass("animated fadeInDownBig");
+            startLevel();
         }, 500);
         setTimeout(function () {
             $(".helperHand").fadeIn(800);
         }, 2000);
+    });
+
+    $(".gameHelpBtn").on('tap click', function () {
+        $("#splashScreen").addClass("animated fadeOutUpBig");
+        setTimeout(function () {
+            $('.help-container').show().addClass("animated fadeInDownBig");
+            startLevel();
+        }, 500);
     });
 
     $(".gamespace").bind("touchmove", function (evt) {
@@ -53,7 +63,6 @@ jQuery(function ($) {
         startLevel();
     });
 
-    startLevel();
 
 //    $('body').on('click',function(){
 //        startLevel()
