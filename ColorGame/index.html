@@ -169,6 +169,13 @@
         // iphone 4
         $('#viewport').attr('content','width = 320, initial-scale = 0.6, user-scalable = no');
     }
+
+    $(document).ready(function() {
+        setTimeout(function () {
+            $('body').addClass('loaded');
+            $('h1').css('color', '#222222');
+        }, 3000);
+    }
 </script>
 </body>
 </html>

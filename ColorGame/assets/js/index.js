@@ -9,10 +9,6 @@ jQuery(function ($) {
     }, false);
 
 
-    setTimeout(function(){
-        $('body').addClass('loaded');
-        $('h1').css('color','#222222');
-    }, 3000);
 
 //    $('.gamespace').on('swipe mouseover touchmove touchstart',function(e){
 //    $('.gamespace').on(' touchmove',function(e){
