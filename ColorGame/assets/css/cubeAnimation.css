@@ -466,6 +466,19 @@ abbr, acronym {
     100% {margin: 0px 0 0 0px}
 }
 
+@-webkit-keyframes  handHelp {
+    0% {margin: -61px 0 0 -23px}
+    10% {margin: -11px 0 0 -23px}
+    20% {margin: -11px 0 0 -83px}
+    30% {margin: -11px 0 0 -133px}
+    40% {margin: 49px 0 0 -133px}
+    50% {margin: 49px 0 0 -83px}
+    60% {margin: 49px 0 0 -23px}
+    70% {margin: 49px 0 0 38px}
+    80% {margin: 49px 0 0 98px}
+    90% {margin: -11px 0 0 98px}
+    100% {margin: -61px 0 0 -23px}
+}
 @keyframes handHelp {
     0% {margin: -61px 0 0 -23px}
     10% {margin: -11px 0 0 -23px}

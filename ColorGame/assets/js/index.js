@@ -137,7 +137,7 @@ function highlightHoveredObject(x, y) {
                     var endTime = new Date();
                     timeUsed = (endTime - startTime) / 1000;
 
-                    
+
                     $(".helperHand").fadeOut(400);
 
                     //next level show
