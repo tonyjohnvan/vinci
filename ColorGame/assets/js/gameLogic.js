@@ -310,7 +310,7 @@ function setGameBoard(level) {
     startTime = new Date();
 
     $('.game-container').css({
-        'background': 'url(assets/img/color' + (levels[currentLevel].stage % 6 + 1) + '.png) no-repeat center center',
+        'background': 'url(assets/img/color' + Math.round(levels[currentLevel].stage / 9 + 1) + '.png) no-repeat center center',
         'background-size': 'auto 100% '
     });
     var cells = $('.gameboard').children();
@@ -322,7 +322,7 @@ function setGameBoard(level) {
     }
 
     $(cells[level.startPos]).attr('status', 'active').css({
-        'background': 'url(assets/img/activeTile' + (levels[currentLevel].stage % 6 + 1) + '.png) no-repeat center center',
+        'background': 'url(assets/img/activeTile' + Math.round(levels[currentLevel].stage / 9 + 1) + '.png) no-repeat center center',
         'background-size': '45px auto'
     })
 
@@ -338,7 +338,7 @@ function updateBoard(cell) {
             })
         } else if ($(cells[ind]).attr('status') == 'active') {
             $(cells[ind]).css({
-                'background': 'url(assets/img/activeTile' + (levels[currentLevel].stage % 6 + 1) + '.png) no-repeat center center',
+                'background': 'url(assets/img/activeTile' + Math.round(levels[currentLevel].stage / 9 + 1) + '.png) no-repeat center center',
                 'background-size': '45px auto'
             })
         }
@@ -353,7 +353,7 @@ function resetGamePad() {
     }).removeAttr('status');
     var cells = $('.gameboard').children();
     $(cells[levels[currentLevel].startPos]).attr('status', 'active').css({
-        'background': 'url(assets/img/activeTile' + (levels[currentLevel].stage % 6 + 1) + '.png) no-repeat center center',
+        'background': 'url(assets/img/activeTile' + Math.round(levels[currentLevel].stage / 9 + 1) + '.png) no-repeat center center',
         'background-size': '45px auto'
     });
 }
