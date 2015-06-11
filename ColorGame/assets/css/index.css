@@ -114,7 +114,7 @@ div#preloader img {
 .splash-container {
     width: 100%;
     height: 100%;
-    background: #0c0c0c url(../img/splash/BG.jpg) center center no-repeat;
+    background: #0c0c0c url(../img/splashOptimized/BG.jpg) center center no-repeat;
     background-size: auto 100%;
 }
 
@@ -134,7 +134,7 @@ div#preloader img {
 }
 
 #tileV {
-    background: url(../img/splash/V.png) center center no-repeat;
+    background: url(../img/splashOptimized/V.png) center center no-repeat;
     background-size: 60px auto;
     top: 331px;
     left: 55px;
@@ -143,7 +143,7 @@ div#preloader img {
 }
 
 #tileI {
-    background: url(../img/splash/I.png) center center no-repeat;
+    background: url(../img/splashOptimized/I.png) center center no-repeat;
     background-size: 60px auto;
     top: 321px;
     left: 135px;
@@ -152,7 +152,7 @@ div#preloader img {
 }
 
 #tileN {
-    background: url(../img/splash/N.png) center center no-repeat;
+    background: url(../img/splashOptimized/N.png) center center no-repeat;
     background-size: 50px auto;
     top: 315px;
     left: 217px;
@@ -161,7 +161,7 @@ div#preloader img {
 }
 
 #tileC {
-    background: url(../img/splash/C.png) center center no-repeat;
+    background: url(../img/splashOptimized/C.png) center center no-repeat;
     background-size: 53px auto;
     top: 314px;
     left: 305px;
@@ -170,7 +170,7 @@ div#preloader img {
 }
 
 #tileI2 {
-    background: url(../img/splash/I2.png) center center no-repeat;
+    background: url(../img/splashOptimized/I2.png) center center no-repeat;
     background-size: 55px auto;
     top: 311px;
     left: 395px;
@@ -179,7 +179,7 @@ div#preloader img {
 }
 
 #tileIU {
-    background: url(../img/splash/U.png) center center no-repeat;
+    background: url(../img/splashOptimized/U.png) center center no-repeat;
     background-size: 56px auto;
     top: 374px;
     left: 315px;
@@ -188,7 +188,7 @@ div#preloader img {
 }
 
 #tileIB {
-    background: url(../img/splash/B.png) center center no-repeat;
+    background: url(../img/splashOptimized/B.png) center center no-repeat;
     background-size: 52px auto;
     top: 441px;
     left: 325px;
@@ -197,7 +197,7 @@ div#preloader img {
 }
 
 #tileIE {
-    background: url(../img/splash/E.png) center center no-repeat;
+    background: url(../img/splashOptimized/E.png) center center no-repeat;
     background-size: 52px auto;
     top: 509px;
     left: 325px;
@@ -206,7 +206,7 @@ div#preloader img {
 }
 
 #tileIC1 {
-    background: url(../img/splash/BlackCube1.png) center center no-repeat;
+    background: url(../img/splashOptimized/BlackCube1.png) center center no-repeat;
     background-size: 72px auto;
     top: 412px;
     left: 65px;
@@ -217,7 +217,7 @@ div#preloader img {
 }
 
 #tileIC2 {
-    background: url(../img/splash/BlackCube2.png) center center no-repeat;
+    background: url(../img/splashOptimized/BlackCube2.png) center center no-repeat;
     background-size: 35px auto;
     top: 489px;
     left: 405px;
@@ -226,7 +226,7 @@ div#preloader img {
 }
 
 #tileIC3 {
-    background: url(../img/splash/BlackCube3.png) center center no-repeat;
+    background: url(../img/splashOptimized/BlackCube3.png) center center no-repeat;
     background-size: 53px auto;
     top: 219px;
     left: 325px;
@@ -235,7 +235,7 @@ div#preloader img {
 }
 
 #tileIC4 {
-    background: url(../img/splash/BlackCube4.png) center center no-repeat;
+    background: url(../img/splashOptimized/BlackCube4.png) center center no-repeat;
     background-size: 53px auto;
     top: 579px;
     left: 423px;
@@ -243,12 +243,20 @@ div#preloader img {
     animation-name: shakeing12;
 }
 #tileIC5 {
-    background: url(../img/splash/BlackCube5.png) center center no-repeat;
+    background: url(../img/splashOptimized/BlackCube5.png) center center no-repeat;
     background-size: 53px auto;
     top: 249px;
     left: 93px;
     -webkit-animation-name: shakeing12;
     animation-name: shakeing12;
+}
+
+.splash-container{
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /* ----- loading ----- */
