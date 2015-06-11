@@ -169,10 +169,6 @@
 <script src="assets/js/index.js"></script>
 <script src="assets/js/gameLogic.js"></script>
 <script>
-    if ($(window).height() < 641) {
-        // iphone 4
-        $('#viewport').attr('content', 'width = 320, initial-scale = 0.6, user-scalable = no');
-    }
 
     $(document).ready(function () {
         // finish loading
@@ -184,6 +180,17 @@
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
         }, false);
+
+
+        if ($(window).width() < 427) {
+            if ($(window).height() < 641) {
+                // iphone 4
+                $('#viewport').attr('content', 'width = 320, initial-scale = 0.6, user-scalable = no');
+            } else {
+                // iphone 5
+                $('#viewport').attr('content', 'width = 320, initial-scale = 0.6, user-scalable = no');
+            }
+        }
     });
 </script>
 </body>

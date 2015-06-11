@@ -19,6 +19,7 @@ body {
     user-select: none;
     -o-user-select: none;
     overflow: hidden;
+    min-width: 320px;
 }
 
 .game-container {
