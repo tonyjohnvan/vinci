@@ -2,6 +2,8 @@
  * Created by fanzhang on 5/25/15.
  */
 var $ = jQuery.noConflict();
+var CountDownClock,timer;
+var gameTime = 5;
 jQuery(function ($) {
     "use strict";
     document.body.addEventListener('touchmove', function (event) {
@@ -38,11 +40,39 @@ jQuery(function ($) {
         $("#splashScreen").addClass("animated fadeOutUpBig");
         $(".help-container").addClass("animated fadeOutUpBig");
         setTimeout(function () {
-            $('.game-container').show().addClass("animated fadeInDownBig");
+            $('.game-container').show().removeClass("animated fadeOutUpBig").addClass("animated fadeInDownBig");
             startLevel();
+
+
+            //start the timer!
+            CountDownClock = $('.clockCountDown').FlipClock({
+                'autoStart': false
+            });
+
+            CountDownClock.setTime(gameTime);
+            CountDownClock.setCountdown(true);
+
+            $($('.flip')[0]).hide();
+            $($('.flip')[1]).hide();
+
+            CountDownClock.start(function () {
+            });
+            if(timer==undefined){
+                timer = $.timer(function () {
+                    endTheGame();
+                }, (gameTime + 2) * 1000);
+            }
+            timer.play(true);
+
         }, 500);
         setTimeout(function () {
             $(".helperHand").fadeIn(800);
+        }, 2000);
+
+        // remove for better performance
+        setTimeout(function () {
+            $('#loader-wrapper').remove();
+            $('.splash-container').remove();
         }, 2000);
     });
 
@@ -70,7 +100,6 @@ jQuery(function ($) {
 
 
     $('.continueGame').on('touchstart', function () {
-
         //next level show
         $('.nextLevel').removeClass('animated zoomIn').addClass('animated zoomOut');
         setTimeout(function () {
@@ -79,6 +108,8 @@ jQuery(function ($) {
         }, 500);
         setTimeout(function () {
             startTime = new Date();
+            CountDownClock.start();
+            timer.play();
         }, 500);
         currentLevel++;
         startLevel();
@@ -125,6 +156,22 @@ function startLevel() {
     setGameBoard(levels[currentLevel]);
 }
 
+function endTheGame() {
+    console.log('Bag');
+    $(".game-container").removeClass("animated fadeInDownBig").addClass("animated fadeOutUpBig");
+    setTimeout(function () {
+        $('.help-container').show().removeClass("animated fadeOutUpBig").addClass("animated fadeInDownBig");
+        startLevel();
+    }, 500);
+    $(".helperHand").fadeOut(400);
+    $('.ruleContainer').html(
+        '<h3>时间到咯！</h3>\
+         <h4>恭喜你，完成到了第'+currentLevel+'关</h4>\
+         <h4>这次再加加油！取得更好的成绩！</h4>\
+        '
+    );
+    timer.stop();
+}
 
 function highlightHoveredObject(x, y) {
     $('.gamespace').each(function () {
@@ -146,6 +193,9 @@ function highlightHoveredObject(x, y) {
                     var endTime = new Date();
                     timeUsed = (endTime - startTime) / 1000;
 
+                    //stop the timer.
+                    CountDownClock.stop();
+                    timer.pause();
 
                     $(".helperHand").fadeOut(400);
 

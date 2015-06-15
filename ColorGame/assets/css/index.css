@@ -48,7 +48,7 @@ body {
     width: 400px;
     height: 480px;
     margin: 0 auto;
-    padding: 200px 0 0 0;
+    padding: 100px 0 0 0;
 }
 
 .gameboard {
@@ -523,7 +523,27 @@ div#preloader img {
     font-size: 33px;
     padding-bottom: 20px;
 }
+.ruleContainer h4{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
 .ruleContainer p{
     font-size: 19px;
     padding-bottom: 20px;
+}
+
+.clockCountDown{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+.flip-clock-divider.hours,
+.flip-clock-divider.minutes,
+.flip-clock-label{
+    display: none;
+}
+
+.clockCountDown > .flip:nth-child(1)
+{
+    display: none;
 }
