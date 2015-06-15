@@ -3,7 +3,7 @@
  */
 var $ = jQuery.noConflict();
 var CountDownClock,timer;
-var gameTime = 5;
+var gameTime = 90;
 jQuery(function ($) {
     "use strict";
     document.body.addEventListener('touchmove', function (event) {
