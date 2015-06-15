@@ -37,6 +37,7 @@ jQuery(function ($) {
 //    });
 
     $(".startGameBtn").on('tap click', function () {
+        currentLevel = 0;
         $("#splashScreen").addClass("animated fadeOutUpBig");
         $(".help-container").addClass("animated fadeOutUpBig");
         setTimeout(function () {
